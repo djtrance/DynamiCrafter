@@ -2,13 +2,14 @@ module.exports = {
   daemon: true,
   models: {
     t2v: {
-      uri: "https://huggingface.co/VideoCrafter/VideoCrafter2/resolve/main/model.ckpt?download=true",
+      uri: "https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/resolve/main/model.ckpt?download=true",
       path: "app/checkpoints/base_512_v2"
     },
     i2v: {
-      uri: "https://huggingface.co/VideoCrafter/Image2Video-512/resolve/main/model.ckpt?download=true",
+      uri: "https://huggingface.co/Doubiiu/DynamiCrafter/resolve/main/model.ckpt?download=true",
       path: "app/checkpoints/i2v_512_v1"
     }
+    
   },
   run: [{
     "method": "local.set",
@@ -26,7 +27,7 @@ module.exports = {
     "params": {
       "path": "app",
       "venv": "env",
-      "message": "python gradio_app.py",
+      "message": "python gradio_app.py --res 512",
       "on": [{ "event": "/http:\/\/[0-9.:]+/", "done": true }]
     }
   }, {
