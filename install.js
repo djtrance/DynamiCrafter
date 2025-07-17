@@ -37,6 +37,7 @@ module.exports = async (kernel) => {
           "uv pip install opencv-python",
           "uv pip install opencv-contrib-python",
           "uv pip install einops",
+          "uv pip install lightning",
           "uv pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
         ]
       }
