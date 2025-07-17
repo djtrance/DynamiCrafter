@@ -33,6 +33,7 @@ module.exports = async (kernel) => {
           cmd,
           "uv pip install -r requirements.txt",
           "uv pip install gradio==3.43.0 av==13.1.0",
+          "uv pip install --upgrade omegaconf"
           "uv pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
         ]
       }
