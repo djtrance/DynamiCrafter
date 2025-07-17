@@ -34,6 +34,8 @@ module.exports = async (kernel) => {
           "uv pip install -r requirements.txt",
           "uv pip install gradio==3.43.0 av==13.1.0",
           "uv pip install --upgrade omegaconf",
+          "uv pip install opencv-python",
+          "uv pip install opencv-contrib-python",
           "uv pip install {{platform === 'darwin' ? 'eva-decord' : 'decord'}}",
         ]
       }
