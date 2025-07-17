@@ -21,7 +21,7 @@ module.exports = async (kernel) => {
     "run": [{
       "method": "shell.run",
       "params": {
-        "message": "git clone https://github.com/peanutcocktail/VideoCrafter app"
+        "message": "git clone https://github.com/Doubiiu/DynamiCrafter app"
       }
     }, {
       "method": "shell.run",
